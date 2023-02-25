@@ -152,7 +152,8 @@ router.get("/signin", async function (req, res, next) {
 // });
 
 function getRole(tokenResponse, req) {
-  if (tokenResponse?.idTokenClaims?.roles.includes("admin")) {
+  console.log(tokenResponse?.idTokenClaims);
+  if (tokenResponse?.idTokenClaims?.roles?.includes("admin")) {
     req.session.isAdmin = true;
   } else {
     req.session.isAdmin = false;

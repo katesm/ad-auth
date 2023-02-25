@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build:serve": "npm run build && ts-node ./server/main.ts"
+    "build:serve": "npm run build && ts-node ./server/main.ts",
+    "prod:serve": "ts-node ./server/main.ts"
   },
   "dependencies": {
     "@azure/msal-node": "^1.15.0",

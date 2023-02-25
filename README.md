@@ -26,7 +26,7 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Getting started
-Create a .env file with the following settings from azure.
+Create a .env and .env.prod file with the following settings from azure.
 ```
 CLOUD_INSTANCE="https://login.microsoftonline.com/" # cloud instance string should end with a trailing slash
 TENANT_ID=""
@@ -40,4 +40,8 @@ GRAPH_API_ENDPOINT="https://graph.microsoft.com/" # graph api endpoint string sh
 
 EXPRESS_SESSION_SECRET="" # random string for express session cookie
 
+```
+### run
+```
+docker-compuse up --build
 ```
